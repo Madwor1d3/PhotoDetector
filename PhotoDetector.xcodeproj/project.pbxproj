@@ -13,6 +13,9 @@
 		0A4607F222302F4B0058B260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4607F122302F4B0058B260 /* Assets.xcassets */; };
 		0A4607F522302F4B0058B260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4607F322302F4B0058B260 /* LaunchScreen.storyboard */; };
 		0A4607FD22302F680058B260 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A4607FC22302F670058B260 /* Inceptionv3.mlmodel */; };
+		0A4607FF223036360058B260 /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4607FE223036360058B260 /* SoundModel.swift */; };
+		0A460806223036AE0058B260 /* Screech.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A460804223036AE0058B260 /* Screech.wav */; };
+		0A460807223036AE0058B260 /* Meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A460805223036AE0058B260 /* Meow.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0A4607F422302F4B0058B260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4607F622302F4B0058B260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4607FC22302F670058B260 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		0A4607FE223036360058B260 /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		0A460804223036AE0058B260 /* Screech.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Screech.wav; sourceTree = "<group>"; };
+		0A460805223036AE0058B260 /* Meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Meow.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				0A4607EA22302F490058B260 /* AppDelegate.swift */,
-				0A4607EC22302F490058B260 /* ViewController.swift */,
-				0A4607EE22302F490058B260 /* Main.storyboard */,
+				0A460802223036610058B260 /* View */,
+				0A4608012230365A0058B260 /* Controller */,
+				0A460800223036520058B260 /* Model */,
+				0A460803223036790058B260 /* Sound Files */,
 				0A4607F122302F4B0058B260 /* Assets.xcassets */,
 				0A4607F322302F4B0058B260 /* LaunchScreen.storyboard */,
 				0A4607F622302F4B0058B260 /* Info.plist */,
 				0A4607FC22302F670058B260 /* Inceptionv3.mlmodel */,
 			);
 			path = PhotoDetector;
+			sourceTree = "<group>";
+		};
+		0A460800223036520058B260 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A4607FE223036360058B260 /* SoundModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A4608012230365A0058B260 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A4607EC22302F490058B260 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A460802223036610058B260 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A4607EE22302F490058B260 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A460803223036790058B260 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A460805223036AE0058B260 /* Meow.wav */,
+				0A460804223036AE0058B260 /* Screech.wav */,
+			);
+			path = "Sound Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A460806223036AE0058B260 /* Screech.wav in Resources */,
+				0A460807223036AE0058B260 /* Meow.wav in Resources */,
 				0A4607F522302F4B0058B260 /* LaunchScreen.storyboard in Resources */,
 				0A4607F222302F4B0058B260 /* Assets.xcassets in Resources */,
 				0A4607F022302F490058B260 /* Main.storyboard in Resources */,
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4607ED22302F490058B260 /* ViewController.swift in Sources */,
+				0A4607FF223036360058B260 /* SoundModel.swift in Sources */,
 				0A4607FD22302F680058B260 /* Inceptionv3.mlmodel in Sources */,
 				0A4607EB22302F490058B260 /* AppDelegate.swift in Sources */,
 			);
