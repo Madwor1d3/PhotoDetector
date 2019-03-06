@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import CoreML
+import Vision
+import Social
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    
+    var classificationResults : [VNClassificationObservation] = []
+    
+    let imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
